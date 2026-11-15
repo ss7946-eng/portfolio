@@ -85,5 +85,57 @@ window.PORTFOLIO = {
       "demo": true,
       "description": "A sample project included to demonstrate the portfolio layout. The imagery comes from the Finn reference and is not work by Hannah Shin. This page is ready for an original project, with space for a description, drawings, photographs and credits."
     }
-  ]
+  ],
+  "profile": {
+    "location": "New York, USA (US Citizen)",
+    "qualifications": [
+      "Licensed Architect, South Korea",
+      "M.S.AAD, Columbia University GSAPP",
+      "B.Arch, Ewha Womans University"
+    ],
+    "phone": "+1-347-807-7636",
+    "phoneHref": "tel:+13478077636",
+    "email": "ss7946@columbia.edu",
+    "cvUrl": "https://drive.google.com/a/columbia.edu/open?id=1gmpvBhyqeJ8fsZe0BeB2ulocr68gkzHn",
+    "education": [
+      {
+        "institution": "Columbia University GSAPP, New York",
+        "dates": "2026.05 – Present",
+        "degree": "Master of Science in Advanced Architectural Design (MS.AAD)",
+        "details": []
+      },
+      {
+        "institution": "Ewha Womans University, Seoul, South Korea",
+        "dates": "2013.03 – 2019.02",
+        "degree": "Magna cum laude, Bachelor of Architecture",
+        "details": [
+          "GPA 3.82 / 4.3 (95.9 / 100 scale)",
+          "Dean’s List: Spring 2013, Fall 2014, Spring 2015, Spring 2016, Spring 2017",
+          "Studio Honors: Space, Form and Structure, Studio 1, Studio 2, Studio 3, Studio 5, Studio 6, Digital Design 1"
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "organization": "Now Architects, Seoul, Korea",
+        "role": "Senior Architect",
+        "dates": "2019.01 – 2025.09",
+        "url": "http://www.nowarch.com/en/",
+        "projects": [
+          "Gadeokdo International Airport (competition + SD/DD)",
+          "RFHIC Office Building (SD/DD/CD)",
+          "Gongju Singwan 608 Mixed-use Complex (SD/DD)",
+          "Public Multi-family Residential (Competition)"
+        ]
+      },
+      {
+        "organization": "Independent Commissioned Project",
+        "role": "Main Designer",
+        "dates": "2021.08 – 2022.08",
+        "projects": [
+          "Single-family Residential (SD/DD/CD)"
+        ]
+      }
+    ]
+  }
 };
