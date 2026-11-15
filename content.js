@@ -111,7 +111,7 @@ window.PORTFOLIO = {
     },
     {
       "id": "single-family-residential",
-      "title": "Single-family Residential",
+      "title": "CL House",
       "section": "professional",
       "category": "Residential / SD/DD/CD",
       "type": "Residential",
@@ -119,11 +119,17 @@ window.PORTFOLIO = {
       "practice": "Independent Commissioned Project",
       "role": "Main Designer",
       "description": "An independently commissioned single-family residence. As main designer, Hannah led the entire architectural design and produced full construction drawings and 3D interior construction models under the supervision of a licensed architect.",
-      "image": "",
+      "image": "images/cl-house/main.webp",
       "demo": false,
       "number": "03",
       "dates": "2021.08 – 2022.08",
-      "contribution": "Overall architectural design; full construction drawings; 3D interior construction models under licensed-architect supervision"
+      "contribution": "Overall architectural design; full construction drawings; 3D interior construction models under licensed-architect supervision",
+      "images": [
+        "images/cl-house/main.webp",
+        "images/cl-house/1.webp",
+        "images/cl-house/2.webp",
+        "images/cl-house/3.webp"
+      ]
     },
     {
       "id": "gongju-singwan-608",
