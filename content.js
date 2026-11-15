@@ -161,7 +161,7 @@ window.PORTFOLIO = {
     "phone": "+1-347-807-7636",
     "phoneHref": "tel:+13478077636",
     "email": "ss7946@columbia.edu",
-    "cvUrl": "https://drive.google.com/a/columbia.edu/open?id=1gmpvBhyqeJ8fsZe0BeB2ulocr68gkzHn",
+    "cvUrl": "https://drive.google.com/file/d/1d6MmbNMGOpCa0CPGIyYleN2VIlsYmuOz/view?usp=sharing",
     "education": [
       {
         "institution": "Columbia University GSAPP, New York",
