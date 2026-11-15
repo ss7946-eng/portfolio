@@ -6,7 +6,7 @@ window.PORTFOLIO = {
     "DESIGN"
   ],
   "tagline": "Spaces, systems, and the life between.",
-  "email": "",
+  "email": "ss7946@columbia.edu",
   "intro": "Hannah Shin is a Korean architect based in New York, exploring the relationships between space, movement and everyday life. Her work brings architectural practice into conversation with research, culture and collective experience.",
   "about": [
     "With professional experience in Korea and a Korean architect’s license, Hannah is continuing her architectural studies in the Advanced Architectural Design program at Columbia GSAPP.",
@@ -14,76 +14,75 @@ window.PORTFOLIO = {
   ],
   "projects": [
     {
-      "id": "morrow-cycling",
-      "title": "Morrow Cycling",
-      "category": "Identity / Motion",
-      "image": "https://framerusercontent.com/images/xdiv5vYGXEqekuTTyWI3XfGJBQ.jpg?scale-down-to=1600",
-      "demo": true,
-      "description": "A sample project included to demonstrate the portfolio layout. The imagery comes from the Finn reference and is not work by Hannah Shin. This page is ready for an original project, with space for a description, drawings, photographs and credits."
+      "id": "gadeokdo-international-airport",
+      "title": "Gadeokdo International Airport",
+      "section": "professional",
+      "category": "Airport / Competition + SD/DD",
+      "type": "Airport",
+      "scope": "Competition + SD/DD",
+      "practice": "Now Architects",
+      "role": "Senior Architect",
+      "description": "Professional work at Now Architects, with involvement in the competition, schematic design and design development stages.",
+      "image": "",
+      "demo": false,
+      "number": "01"
     },
     {
-      "id": "palma-co",
-      "title": "Palma & Co",
-      "category": "Hospitality / Identity",
-      "image": "https://framerusercontent.com/images/CCHHpvB2NWhOX4WRtNuisdcfLic.png?scale-down-to=1600",
-      "demo": true,
-      "description": "A sample project included to demonstrate the portfolio layout. The imagery comes from the Finn reference and is not work by Hannah Shin. This page is ready for an original project, with space for a description, drawings, photographs and credits."
+      "id": "rfhic-office-building",
+      "title": "RFHIC Office Building",
+      "section": "professional",
+      "category": "Office / SD/DD/CD",
+      "type": "Office",
+      "scope": "SD/DD/CD",
+      "practice": "Now Architects",
+      "role": "Senior Architect",
+      "description": "Professional work at Now Architects, with involvement in schematic design, design development and construction documentation.",
+      "image": "",
+      "demo": false,
+      "number": "02"
     },
     {
-      "id": "vale-workshop",
-      "title": "Vale Workshop",
-      "category": "Objects / Craft",
-      "image": "https://framerusercontent.com/images/m2I4dFUtwgZnxDA63bVOXKyC8hI.jpg?scale-down-to=1600",
-      "demo": true,
-      "description": "A sample project included to demonstrate the portfolio layout. The imagery comes from the Finn reference and is not work by Hannah Shin. This page is ready for an original project, with space for a description, drawings, photographs and credits."
+      "id": "gongju-singwan-608",
+      "title": "Gongju Singwan 608 Mixed-use Complex",
+      "section": "professional",
+      "category": "Mixed-use / SD/DD",
+      "type": "Mixed-use",
+      "scope": "SD/DD",
+      "practice": "Now Architects",
+      "role": "Senior Architect",
+      "description": "Professional work at Now Architects, with involvement in schematic design and design development.",
+      "image": "",
+      "demo": false,
+      "number": "03"
     },
     {
-      "id": "northline-capital",
-      "title": "Northline Capital",
-      "category": "Strategy / Identity",
-      "image": "https://framerusercontent.com/images/91ytemgmwMw8WrlUiNlluK5beew.jpg?scale-down-to=1600",
-      "demo": true,
-      "description": "A sample project included to demonstrate the portfolio layout. The imagery comes from the Finn reference and is not work by Hannah Shin. This page is ready for an original project, with space for a description, drawings, photographs and credits."
+      "id": "public-multi-family-residential",
+      "title": "Public Multi-family Residential",
+      "section": "professional",
+      "category": "Residential / Competition",
+      "type": "Residential",
+      "scope": "Competition",
+      "practice": "Now Architects",
+      "role": "Senior Architect",
+      "description": "A public multi-family residential competition project undertaken at Now Architects.",
+      "image": "",
+      "demo": false,
+      "number": "04"
     },
     {
-      "id": "liora-skin",
-      "title": "Liora Skin",
-      "category": "Packaging / Art direction",
-      "image": "https://framerusercontent.com/images/t3So6IMcR05c6rkwAB4jYtMZg.png?scale-down-to=1600",
-      "demo": true,
-      "description": "A sample project included to demonstrate the portfolio layout. The imagery comes from the Finn reference and is not work by Hannah Shin. This page is ready for an original project, with space for a description, drawings, photographs and credits."
-    },
-    {
-      "id": "forma-studio",
-      "title": "Forma Studio",
-      "category": "Design / Editorial",
-      "image": "https://framerusercontent.com/images/f5MOWhbIaotP8ANfllepUEPYFDE.jpg?scale-down-to=1600",
-      "demo": true,
-      "description": "A sample project included to demonstrate the portfolio layout. The imagery comes from the Finn reference and is not work by Hannah Shin. This page is ready for an original project, with space for a description, drawings, photographs and credits."
-    },
-    {
-      "id": "solaire-kitchen",
-      "title": "Solaire Kitchen",
-      "category": "Food / Identity",
-      "image": "https://framerusercontent.com/images/blQyUSCZZU42TARoirrlcAw5JZ4.png?scale-down-to=1600",
-      "demo": true,
-      "description": "A sample project included to demonstrate the portfolio layout. The imagery comes from the Finn reference and is not work by Hannah Shin. This page is ready for an original project, with space for a description, drawings, photographs and credits."
-    },
-    {
-      "id": "veyra-motors",
-      "title": "Veyra Motors",
-      "category": "Mobility / Design",
-      "image": "https://framerusercontent.com/images/pC7XGAx8babSLQsO5YSbUeq27c.jpg?scale-down-to=1600",
-      "demo": true,
-      "description": "A sample project included to demonstrate the portfolio layout. The imagery comes from the Finn reference and is not work by Hannah Shin. This page is ready for an original project, with space for a description, drawings, photographs and credits."
-    },
-    {
-      "id": "aster-house",
-      "title": "Aster House",
-      "category": "Architecture / Interiors",
-      "image": "https://framerusercontent.com/images/5Z2wZtpykIvciTJDVZek5e0dVh8.jpg?scale-down-to=1600",
-      "demo": true,
-      "description": "A sample project included to demonstrate the portfolio layout. The imagery comes from the Finn reference and is not work by Hannah Shin. This page is ready for an original project, with space for a description, drawings, photographs and credits."
+      "id": "single-family-residential",
+      "title": "Single-family Residential",
+      "section": "professional",
+      "category": "Residential / SD/DD/CD",
+      "type": "Residential",
+      "scope": "SD/DD/CD",
+      "practice": "Independent Commissioned Project",
+      "role": "Main Designer",
+      "description": "An independently commissioned single-family residential project, with responsibility as main designer across schematic design, design development and construction documentation.",
+      "image": "",
+      "demo": false,
+      "number": "05",
+      "dates": "2021.08 – 2022.08"
     }
   ],
   "profile": {
@@ -124,6 +123,12 @@ window.PORTFOLIO = {
           "RFHIC Office Building (SD/DD/CD)",
           "Gongju Singwan 608 Mixed-use Complex (SD/DD)",
           "Public Multi-family Residential (Competition)"
+        ],
+        "projectIds": [
+          "gadeokdo-international-airport",
+          "rfhic-office-building",
+          "gongju-singwan-608",
+          "public-multi-family-residential"
         ]
       },
       {
@@ -132,8 +137,22 @@ window.PORTFOLIO = {
         "dates": "2021.08 – 2022.08",
         "projects": [
           "Single-family Residential (SD/DD/CD)"
+        ],
+        "projectIds": [
+          "single-family-residential"
         ]
       }
     ]
-  }
+  },
+  "referenceImages": [
+    "https://framerusercontent.com/images/xdiv5vYGXEqekuTTyWI3XfGJBQ.jpg?scale-down-to=1600",
+    "https://framerusercontent.com/images/CCHHpvB2NWhOX4WRtNuisdcfLic.png?scale-down-to=1600",
+    "https://framerusercontent.com/images/m2I4dFUtwgZnxDA63bVOXKyC8hI.jpg?scale-down-to=1600",
+    "https://framerusercontent.com/images/91ytemgmwMw8WrlUiNlluK5beew.jpg?scale-down-to=1600",
+    "https://framerusercontent.com/images/t3So6IMcR05c6rkwAB4jYtMZg.png?scale-down-to=1600",
+    "https://framerusercontent.com/images/f5MOWhbIaotP8ANfllepUEPYFDE.jpg?scale-down-to=1600",
+    "https://framerusercontent.com/images/blQyUSCZZU42TARoirrlcAw5JZ4.png?scale-down-to=1600",
+    "https://framerusercontent.com/images/pC7XGAx8babSLQsO5YSbUeq27c.jpg?scale-down-to=1600",
+    "https://framerusercontent.com/images/5Z2wZtpykIvciTJDVZek5e0dVh8.jpg?scale-down-to=1600"
+  ]
 };
