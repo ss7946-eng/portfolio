@@ -22,10 +22,37 @@ window.PORTFOLIO = {
       "scope": "Competition + SD/DD",
       "practice": "Now Architects",
       "role": "Senior Architect",
-      "description": "Professional work at Now Architects, with involvement in the competition, schematic design and design development stages.",
-      "image": "",
+      "description": "A passenger terminal design for the new airport on Gadeokdo, Busan. Professional work at NOW Architects included the competition, schematic design and design development stages.",
+      "image": "https://www.nowarch.com/uploads/media/m240822.jpg",
       "demo": false,
-      "number": "01"
+      "number": "01",
+      "images": [
+        "https://www.nowarch.com/uploads/media/m240822.jpg",
+        "https://www.nowarch.com/uploads/media/416.jpg"
+      ],
+      "sourceUrl": "https://www.nowarch.com/en/works/view?idx=576",
+      "facts": [
+        [
+          "Location",
+          "Gadeokdo, Gangseo-gu, Busan, South Korea"
+        ],
+        [
+          "Program",
+          "Passenger terminal"
+        ],
+        [
+          "Site area",
+          "6,668,947 m²"
+        ],
+        [
+          "Floors",
+          "4 above ground"
+        ],
+        [
+          "Design year",
+          "2024"
+        ]
+      ]
     },
     {
       "id": "rfhic-office-building",
@@ -36,38 +63,49 @@ window.PORTFOLIO = {
       "scope": "SD/DD/CD",
       "practice": "Now Architects",
       "role": "Senior Architect",
-      "description": "Professional work at Now Architects, with involvement in schematic design, design development and construction documentation.",
-      "image": "",
+      "description": "RFHIC’s knowledge industry center at Gwacheon Knowledge Industry Center 11-1BL. Professional work at NOW Architects included schematic design, design development and construction documentation.",
+      "image": "https://www.nowarch.com/uploads/media/d283.jpg",
       "demo": false,
-      "number": "02"
-    },
-    {
-      "id": "gongju-singwan-608",
-      "title": "Gongju Singwan 608 Mixed-use Complex",
-      "section": "professional",
-      "category": "Mixed-use / SD/DD",
-      "type": "Mixed-use",
-      "scope": "SD/DD",
-      "practice": "Now Architects",
-      "role": "Senior Architect",
-      "description": "Professional work at Now Architects, with involvement in schematic design and design development.",
-      "image": "",
-      "demo": false,
-      "number": "03"
-    },
-    {
-      "id": "public-multi-family-residential",
-      "title": "Public Multi-family Residential",
-      "section": "professional",
-      "category": "Residential / Competition",
-      "type": "Residential",
-      "scope": "Competition",
-      "practice": "Now Architects",
-      "role": "Senior Architect",
-      "description": "A public multi-family residential competition project undertaken at Now Architects.",
-      "image": "",
-      "demo": false,
-      "number": "04"
+      "number": "02",
+      "images": [
+        "https://www.nowarch.com/uploads/media/d283.jpg",
+        "https://www.nowarch.com/uploads/media/d240601.jpg",
+        "https://www.nowarch.com/uploads/media/d283-3.jpg",
+        "https://www.nowarch.com/uploads/media/d283-4.jpg",
+        "https://www.nowarch.com/uploads/media/d283-1.jpg",
+        "https://www.nowarch.com/uploads/media/d283-2.jpg"
+      ],
+      "sourceUrl": "https://www.nowarch.com/en/works/view?idx=444",
+      "facts": [
+        [
+          "Location",
+          "Gwacheon Knowledge Information Town, South Korea"
+        ],
+        [
+          "Program",
+          "Knowledge industry center"
+        ],
+        [
+          "Site area",
+          "6,362 m²"
+        ],
+        [
+          "Gross floor area",
+          "36,315 m²"
+        ],
+        [
+          "Floors",
+          "3 basement levels / 12 above ground"
+        ],
+        [
+          "Design year",
+          "2018"
+        ],
+        [
+          "Completion year",
+          "2024"
+        ]
+      ]
     },
     {
       "id": "single-family-residential",
@@ -81,8 +119,36 @@ window.PORTFOLIO = {
       "description": "An independently commissioned single-family residential project, with responsibility as main designer across schematic design, design development and construction documentation.",
       "image": "",
       "demo": false,
-      "number": "05",
+      "number": "03",
       "dates": "2021.08 – 2022.08"
+    },
+    {
+      "id": "gongju-singwan-608",
+      "title": "Gongju Singwan 608 Mixed-use Complex",
+      "section": "professional",
+      "category": "Mixed-use / SD/DD",
+      "type": "Mixed-use",
+      "scope": "SD/DD",
+      "practice": "Now Architects",
+      "role": "Senior Architect",
+      "description": "Professional work at Now Architects, with involvement in schematic design and design development.",
+      "image": "",
+      "demo": false,
+      "number": "04"
+    },
+    {
+      "id": "public-multi-family-residential",
+      "title": "Public Multi-family Residential",
+      "section": "professional",
+      "category": "Residential / Competition",
+      "type": "Residential",
+      "scope": "Competition",
+      "practice": "Now Architects",
+      "role": "Senior Architect",
+      "description": "A public multi-family residential competition project undertaken at Now Architects.",
+      "image": "",
+      "demo": false,
+      "number": "05"
     }
   ],
   "profile": {
