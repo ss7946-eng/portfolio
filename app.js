@@ -35,4 +35,72 @@ if('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: red
  document.documentElement.classList.add('js-motion');const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}}),{threshold:.05,rootMargin:'0px 0px 40px 0px'});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
 }
 if(matchMedia('(pointer:fine)').matches){const cursor=document.querySelector('.cursor');document.querySelectorAll('.image-wrap').forEach(el=>{el.addEventListener('pointerenter',()=>cursor.classList.add('active'));el.addEventListener('pointerleave',()=>cursor.classList.remove('active'));el.addEventListener('pointermove',e=>{cursor.style.left=e.clientX+'px';cursor.style.top=e.clientY+'px'})});window.addEventListener('blur',()=>cursor.classList.remove('active'));}
+
+// The hero trail reuses project images; it never intercepts links or touch scrolling.
+const hero=document.querySelector('.hero');
+const trailMedia=matchMedia('(hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference)');
+if(hero){
+ const layer=document.createElement('div');
+ layer.className='hero-trail';
+ layer.setAttribute('aria-hidden','true');
+ hero.append(layer);
+ const sources=data.projects.filter(p=>p.image).map(p=>p.image);
+ const images=[];
+ let loaded=false,index=0,lastPoint=null,lastTime=0,depth=0;
+ const active=new Map();
+ function clearTrail(){
+  lastPoint=null;lastTime=0;depth=0;
+  active.forEach((animation,img)=>{animation.cancel();img.remove()});
+  active.clear();
+ }
+ function preload(){
+  if(loaded||!trailMedia.matches)return;
+  loaded=true;
+  sources.slice(0,9).forEach(src=>{
+   const img=new Image();img.decoding='async';img.alt='';
+   img.onload=()=>images.push(img);
+   // Framer samples have a smaller thumbnail; custom project URLs stay unchanged.
+   img.src=src.replace(/scale-down-to=\d+/,'scale-down-to=512');
+  });
+ }
+ function stamp(x,y,dx,dy){
+  if(!images.length)return;
+  const img=images[index++%images.length].cloneNode();
+  img.className='trail-image';img.draggable=false;
+  img.style.left=x+'px';img.style.top=y+'px';img.style.zIndex=String(++depth);
+  layer.append(img);
+  const angle=(index%5-2)*5;
+  const driftX=Math.max(-45,Math.min(45,dx*.2));
+  const driftY=Math.max(-30,Math.min(30,dy*.2));
+  const pose=(scale,rx=0,ry=0)=>`translate(calc(-50% + ${rx}px),calc(-50% + ${ry}px)) rotate(${angle}deg) scale(${scale})`;
+  const animation=img.animate([
+   {opacity:0,transform:pose(.65),offset:0},
+   {opacity:1,transform:pose(1),offset:.12},
+   {opacity:1,transform:pose(1,driftX,driftY),offset:.55},
+   {opacity:0,transform:pose(.88,driftX,driftY+24),offset:1}
+  ],{duration:1400,easing:'linear',fill:'forwards'});
+  active.set(img,animation);
+  animation.finished.then(()=>{active.delete(img);img.remove()},()=>{});
+  // Bound DOM and GPU work even during very fast movement.
+  if(active.size>8){const [old,anim]=active.entries().next().value;anim.cancel();old.remove();active.delete(old)}
+ }
+ hero.addEventListener('pointermove',event=>{
+  if(!trailMedia.matches||event.pointerType==='touch')return;
+  preload();
+  if(!images.length)return;
+  const rect=hero.getBoundingClientRect();
+  const x=event.clientX-rect.left,y=event.clientY-rect.top;
+  if(event.clientY<document.querySelector('#header').getBoundingClientRect().bottom)return;
+  const dx=lastPoint?x-lastPoint.x:0,dy=lastPoint?y-lastPoint.y:0;
+  const now=performance.now();
+  if(lastPoint&&(Math.hypot(dx,dy)<85||now-lastTime<55))return;
+  stamp(x,y,dx,dy);lastPoint={x,y};lastTime=now;
+ },{passive:true});
+ hero.addEventListener('pointerleave',clearTrail);
+ window.addEventListener('scroll',clearTrail,{passive:true});
+ window.addEventListener('blur',clearTrail);
+ document.addEventListener('visibilitychange',()=>{if(document.hidden)clearTrail()});
+ trailMedia.addEventListener('change',()=>{clearTrail();preload()});
+ preload();
+}
 })();

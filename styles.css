@@ -5,3 +5,9 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.js-motion .reveal{opacity:1;transform:none;filter:none}}
 @media(max-width:360px){.brand{font-size:18px;gap:4px}.brand .mark{width:15px}.nav{gap:12px;font-size:11px}.section-heading h2{font-size:31px}}
 .card-arrow{font-size:0;width:20px;height:20px;position:relative;margin-top:2px}.card-arrow::after{content:'';position:absolute;right:3px;top:3px;width:10px;height:10px;border-top:1.5px solid;border-right:1.5px solid}.card-arrow::before{content:'';position:absolute;right:3px;top:3px;width:15px;height:1.5px;background:currentColor;transform:rotate(-45deg);transform-origin:right center}
+
+/* Project image trail in the opening screen. */
+.hero{position:relative;isolation:isolate;overflow:hidden}
+.hero-trail{position:absolute;inset:0;pointer-events:none;z-index:5;overflow:hidden}
+.trail-image{position:absolute;width:clamp(140px,15vw,220px);height:clamp(180px,19vw,280px);object-fit:cover;border-radius:3px;pointer-events:none;opacity:0;box-shadow:0 8px 26px #00000014;will-change:transform,opacity}
+@media(hover:none),(pointer:coarse),(prefers-reduced-motion:reduce){.hero-trail{display:none}}
