@@ -109,9 +109,7 @@ window.PORTFOLIO = {
         "dates": "2013.03 – 2019.02",
         "degree": "Magna cum laude, Bachelor of Architecture",
         "details": [
-          "GPA 3.82 / 4.3 (95.9 / 100 scale)",
-          "Dean’s List: Spring 2013, Fall 2014, Spring 2015, Spring 2016, Spring 2017",
-          "Studio Honors: Space, Form and Structure, Studio 1, Studio 2, Studio 3, Studio 5, Studio 6, Digital Design 1"
+          "Dean’s List: Spring 2013, Fall 2014, Spring 2015, Spring 2016, Spring 2017"
         ]
       }
     ],
