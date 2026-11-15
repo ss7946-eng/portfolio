@@ -22,7 +22,7 @@ window.PORTFOLIO = {
       "scope": "Competition + SD/DD",
       "practice": "Now Architects",
       "role": "Senior Architect",
-      "description": "A passenger terminal design for the new airport on Gadeokdo, Busan. Professional work at NOW Architects included the competition, schematic design and design development stages.",
+      "description": "A passenger terminal design for the new airport on Gadeokdo, Busan. As a member of the roof team at NOW Architects, Hannah worked on 3D surface rationalization and profile section design, produced technical submission deliverables, and coordinated with structural, MEP and other engineering disciplines.",
       "image": "https://www.nowarch.com/uploads/media/m240822.jpg",
       "demo": false,
       "number": "01",
@@ -52,7 +52,8 @@ window.PORTFOLIO = {
           "Design year",
           "2024"
         ]
-      ]
+      ],
+      "contribution": "Roof team; 3D surface rationalization; profile section design; technical submissions; engineering coordination"
     },
     {
       "id": "rfhic-office-building",
@@ -63,7 +64,7 @@ window.PORTFOLIO = {
       "scope": "SD/DD/CD",
       "practice": "Now Architects",
       "role": "Senior Architect",
-      "description": "RFHIC’s knowledge industry center at Gwacheon Knowledge Industry Center 11-1BL. Professional work at NOW Architects included schematic design, design development and construction documentation.",
+      "description": "A knowledge industry center in Gwacheon. At NOW Architects, Hannah designed ancillary facilities and integrated spatial details, and prepared code reviews, permitting documents and construction documentation.",
       "image": "https://www.nowarch.com/uploads/media/d283.jpg",
       "demo": false,
       "number": "02",
@@ -105,7 +106,8 @@ window.PORTFOLIO = {
           "Completion year",
           "2024"
         ]
-      ]
+      ],
+      "contribution": "Ancillary facility design; spatial detailing; code reviews; permitting; construction documentation"
     },
     {
       "id": "single-family-residential",
@@ -116,11 +118,12 @@ window.PORTFOLIO = {
       "scope": "SD/DD/CD",
       "practice": "Independent Commissioned Project",
       "role": "Main Designer",
-      "description": "An independently commissioned single-family residential project, with responsibility as main designer across schematic design, design development and construction documentation.",
+      "description": "An independently commissioned single-family residence. As main designer, Hannah led the entire architectural design and produced full construction drawings and 3D interior construction models under the supervision of a licensed architect.",
       "image": "",
       "demo": false,
       "number": "03",
-      "dates": "2021.08 – 2022.08"
+      "dates": "2021.08 – 2022.08",
+      "contribution": "Overall architectural design; full construction drawings; 3D interior construction models under licensed-architect supervision"
     },
     {
       "id": "gongju-singwan-608",
@@ -131,10 +134,11 @@ window.PORTFOLIO = {
       "scope": "SD/DD",
       "practice": "Now Architects",
       "role": "Senior Architect",
-      "description": "Professional work at Now Architects, with involvement in schematic design and design development.",
+      "description": "A mixed-use complex in Gongju. At NOW Architects, Hannah led facade design and lower-level podium floor plans. Her work also included code and feasibility reviews, permitting packages, and coordination with landscape, fire protection and other engineering disciplines.",
       "image": "",
       "demo": false,
-      "number": "04"
+      "number": "04",
+      "contribution": "Facade design; podium floor plans; code and feasibility reviews; permitting; engineering coordination"
     },
     {
       "id": "public-multi-family-residential",
@@ -145,10 +149,11 @@ window.PORTFOLIO = {
       "scope": "Competition",
       "practice": "Now Architects",
       "role": "Senior Architect",
-      "description": "A public multi-family residential competition project undertaken at Now Architects.",
+      "description": "Public-sector residential competition work at NOW Architects. Hannah developed concept design proposals and produced submission packages, including analytical diagrams.",
       "image": "",
       "demo": false,
-      "number": "05"
+      "number": "05",
+      "contribution": "Concept design; analytical diagrams; competition submission packages"
     }
   ],
   "profile": {
