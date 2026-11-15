@@ -1,0 +1,38 @@
+(() => {
+'use strict';
+const data=window.PORTFOLIO;
+const main=document.querySelector('#main');
+const page=document.body.dataset.page;
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const roll=(label,href,extra='')=>`<a class="roll" href="${esc(href)}" ${extra}><span>${esc(label)}</span><span aria-hidden="true">${esc(label)}</span></a>`;
+const mark=`<svg class="mark" viewBox="0 0 24 28" aria-hidden="true">${Array.from({length:8},(_,i)=>`<circle cx="${12+9*Math.cos(i*Math.PI/4)}" cy="${14+11*Math.sin(i*Math.PI/4)}" r="${i%2?1.5:2}" fill="currentColor"/>`).join('')}</svg>`;
+const contactHref=data.email?`mailto:${data.email}`:'contact.html';
+document.querySelector('#header').innerHTML=`<a href="index.html" class="brand" aria-label="${esc(data.name)} home">${mark}${esc(data.name)}</a><nav class="nav" aria-label="Main navigation">${roll('Work','work.html',page==='work'?'aria-current="page"':'')}${roll('About','about.html',page==='about'?'aria-current="page"':'')}${roll('Contact',contactHref,page==='contact'?'aria-current="page"':'')}</nav>`;
+document.querySelector('#footer').innerHTML=`<a class="footer-wordmark" href="index.html" aria-label="Back to home">${mark}<span>${esc(data.name)}</span></a><div class="footer-bottom"><p>Architecture & design<br>Based in ${esc(data.location)}</p><nav class="footer-nav" aria-label="Portfolio links">${roll('Work','work.html')}${roll('About','about.html')}${roll('Contact',contactHref)}</nav><nav class="footer-nav" aria-label="More links">${roll('GitHub','https://github.com/ss7946-eng/portfolio')}${roll('Privacy','privacy.html')}${roll('Back to top','#main')}</nav></div><div class="footer-credits"><p class="footer-demo">Design preview · Gallery images and sample projects are from <a class="text-link" href="https://finn.framer.media/" target="_blank" rel="noopener noreferrer">Finn</a>. They are placeholders, not projects by Hannah Shin.</p><span>${esc(data.name)} ${new Date().getFullYear()}</span></div>`;
+const card=(p,i=0)=>`<a class="project-card reveal" href="project.html?id=${encodeURIComponent(p.id)}" aria-label="${esc(p.title)} — ${p.demo?'sample project':'view project'}"><div class="image-wrap"><img src="${esc(p.image)}" alt="${esc(p.title)}${p.demo?' — Finn reference sample':''}" loading="${i<2?'eager':'lazy'}" decoding="async" width="800" height="1000">${p.demo?'<span class="sample">Reference sample</span>':''}</div><div class="card-caption"><div><h3 class="card-title">${esc(p.title)}</h3><p class="card-subtitle">${esc(p.category)}</p></div><span class="card-arrow" aria-hidden="true">↗</span></div></a>`;
+const gallery=(projects,heading='Selected work',more=false)=>`<section class="section ${more?'more-work':''}" aria-label="${heading}"><div class="section-heading"><h2>${heading}</h2>${more?'<a class="text-link" href="work.html">View all ↗</a>':'<span class="small-note">Sample project gallery</span>'}</div><div class="grid">${projects.map(card).join('')}</div></section>`;
+const intro=()=>`<h2 class="intro reveal">${esc(data.intro)}</h2>`;
+const about=()=>`<section class="info-row"><h2>About</h2><div class="prose reveal">${data.about.map(t=>`<p>${esc(t)}</p>`).join('')}<figure class="about-art" style="margin-left:0;margin-right:0"><img src="${esc(data.projects[8].image)}" alt="Architectural interior — reference image from Finn" loading="lazy" width="1000" height="750"><figcaption class="sample">Reference image · Portrait to be added</figcaption></figure></div></section>`;
+const contact=()=>`<section class="info-row" id="contact"><h2>Contact</h2><div class="contact-list">${data.email?roll(`${data.email} ↗`,contactHref):'<p>Let’s start a conversation.</p><p class="hint">Contact details will be added soon.</p>'}<a class="contact-link" href="work.html">Explore the work ↗</a></div></section>`;
+if(page==='index'){
+ let i=0;
+ const head=data.headline.map(line=>`<span aria-hidden="true">${[...line].map(c=>c===' '?' ':`<span class="letter" style="--i:${i++}">${esc(c)}</span>`).join('')}</span>`).join('');
+ main.innerHTML=`<section class="hero"><p class="eyebrow">${esc(data.name)} from ${esc(data.location)}</p><h1 aria-label="${esc(data.headline.join(' '))}">${head}</h1><p class="tagline">${esc(data.tagline)}</p></section>${gallery(data.projects.slice(0,8))}${intro()}${about()}${contact()}`;
+}else if(page==='work'){
+ main.classList.add('page-work');main.innerHTML=`<div class="page-heading"><h1>Work</h1></div>${gallery(data.projects,'Selected work')}`;
+}else if(page==='about'){
+ main.classList.add('page-about');main.innerHTML=`<div class="page-heading"><h1>About</h1></div>${intro()}${about()}${contact()}`;
+}else if(page==='contact'){
+ main.classList.add('page-contact');main.innerHTML=`<div class="page-heading"><h1>Let’s make something<br>meaningful.</h1></div>${contact()}`;
+}else if(page==='project'){
+ const p=data.projects.find(p=>p.id===new URLSearchParams(location.search).get('id'));
+ if(!p){document.title='Project not found — '+data.name;main.innerHTML='<section class="not-found"><h1>Project not found.</h1><a class="text-link" href="work.html">Back to all work ↗</a></section>';}
+ else{document.title=p.title+' — '+data.name;main.innerHTML=`<div class="page-heading"><h1>${esc(p.title)}</h1><p>${esc(p.category)}</p></div><figure class="project-hero"><img src="${esc(p.image)}" alt="${esc(p.title)} — sample project" fetchpriority="high" width="1600" height="1000"></figure><div class="project-info"><section class="info-row"><h2>Info</h2><div class="prose"><p>${esc(p.description)}</p></div></section><section class="info-row"><h2>Project details</h2><dl class="facts"><div><dt>Project</dt><dd>${esc(p.title)}</dd></div><div><dt>Discipline</dt><dd>${esc(p.category)}</dd></div><div><dt>Status</dt><dd>${p.demo?'Reference sample':'Selected work'}</dd></div><div><dt>Image credit</dt><dd><a class="text-link" href="https://finn.framer.media/" target="_blank" rel="noopener noreferrer">Finn template ↗</a></dd></div></dl></section></div>${gallery(data.projects.filter(q=>q.id!==p.id).slice(0,2),'Other work',true)}`;}
+}else if(page==='privacy'){
+ main.innerHTML='<div class="page-heading"><h1>Privacy</h1></div><div class="legal"><h2>A simple portfolio.</h2><p>This site has no contact form, analytics scripts or advertising cookies. It does not store visitor information in a database.</p><h2>External resources</h2><p>Sample images and fonts load from Framer’s content delivery network. Hosting and external resource providers may receive technical information such as your IP address when your browser requests a page or file. External links take you to other websites with their own privacy practices.</p></div>';
+}
+if('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches){
+ document.documentElement.classList.add('js-motion');const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}}),{threshold:.05,rootMargin:'0px 0px 40px 0px'});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+}
+if(matchMedia('(pointer:fine)').matches){const cursor=document.querySelector('.cursor');document.querySelectorAll('.image-wrap').forEach(el=>{el.addEventListener('pointerenter',()=>cursor.classList.add('active'));el.addEventListener('pointerleave',()=>cursor.classList.remove('active'));el.addEventListener('pointermove',e=>{cursor.style.left=e.clientX+'px';cursor.style.top=e.clientY+'px'})});window.addEventListener('blur',()=>cursor.classList.remove('active'));}
+})();
