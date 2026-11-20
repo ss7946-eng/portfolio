@@ -162,6 +162,57 @@ window.PORTFOLIO = {
       "contribution": "Concept design; analytical diagrams; competition submission packages"
     },
     {
+      "id": "ewha",
+      "title": "Ewha",
+      "section": "education",
+      "category": "Academic project",
+      "type": "Academic project",
+      "number": "03",
+      "image": "images/ewha/01_collage.webp",
+      "images": [
+        "images/ewha/01_collage.webp",
+        "images/ewha/03_sec-1.webp",
+        "images/ewha/03_sec-2.webp",
+        "images/ewha/03_sec-3.webp",
+        "images/ewha/04_cg_ext_2.webp",
+        "images/ewha/06_stru.webp",
+        "images/ewha/08_process-01.webp",
+        "images/ewha/08_process-02.webp",
+        "images/ewha/08_process-04.webp"
+      ],
+      "gallery": [
+        {
+          "label": "03_SEC",
+          "images": [
+            "images/ewha/03_sec-1.webp",
+            "images/ewha/03_sec-2.webp",
+            "images/ewha/03_sec-3.webp"
+          ]
+        },
+        {
+          "label": "04_CG_EXT_2",
+          "images": [
+            "images/ewha/04_cg_ext_2.webp"
+          ]
+        },
+        {
+          "label": "06_STRU",
+          "images": [
+            "images/ewha/06_stru.webp"
+          ]
+        },
+        {
+          "label": "08_PROCESS",
+          "images": [
+            "images/ewha/08_process-01.webp",
+            "images/ewha/08_process-02.webp",
+            "images/ewha/08_process-04.webp"
+          ]
+        }
+      ],
+      "description": ""
+    },
+    {
       "id": "gonghang-dong",
       "title": "Six Points Illuminating Gonghang-dong",
       "section": "education",
