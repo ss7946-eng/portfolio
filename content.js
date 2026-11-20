@@ -53,7 +53,9 @@ window.PORTFOLIO = {
           "2024"
         ]
       ],
-      "contribution": "Roof team; 3D surface rationalization; profile section design; technical submissions; engineering coordination"
+      "contribution": "Roof team; 3D surface rationalization; profile section design; technical submissions; engineering coordination",
+      "selected": true,
+      "folder": "P01_Gadeokdo"
     },
     {
       "id": "rfhic-office-building",
@@ -107,7 +109,9 @@ window.PORTFOLIO = {
           "2024"
         ]
       ],
-      "contribution": "Ancillary facility design; spatial detailing; code reviews; permitting; construction documentation"
+      "contribution": "Ancillary facility design; spatial detailing; code reviews; permitting; construction documentation",
+      "selected": true,
+      "folder": "P02_RFHIC"
     },
     {
       "id": "single-family-residential",
@@ -129,7 +133,9 @@ window.PORTFOLIO = {
         "images/cl-house/1.webp",
         "images/cl-house/2.webp",
         "images/cl-house/3.webp"
-      ]
+      ],
+      "selected": true,
+      "folder": "P03_CL House"
     },
     {
       "id": "gongju-singwan-608",
@@ -144,7 +150,9 @@ window.PORTFOLIO = {
       "image": "",
       "demo": false,
       "number": "04",
-      "contribution": "Facade design; podium floor plans; code and feasibility reviews; permitting; engineering coordination"
+      "contribution": "Facade design; podium floor plans; code and feasibility reviews; permitting; engineering coordination",
+      "selected": true,
+      "folder": "P04_Gongju"
     },
     {
       "id": "public-multi-family-residential",
@@ -159,7 +167,9 @@ window.PORTFOLIO = {
       "image": "",
       "demo": false,
       "number": "05",
-      "contribution": "Concept design; analytical diagrams; competition submission packages"
+      "contribution": "Concept design; analytical diagrams; competition submission packages",
+      "selected": true,
+      "folder": "P05_Public_Housing"
     },
     {
       "id": "ewha",
@@ -210,7 +220,9 @@ window.PORTFOLIO = {
           ]
         }
       ],
-      "description": ""
+      "description": "",
+      "selected": true,
+      "folder": "A03_Ewha"
     },
     {
       "id": "gonghang-dong",
@@ -239,7 +251,114 @@ window.PORTFOLIO = {
           ]
         }
       ],
-      "description": ""
+      "description": "",
+      "selected": true,
+      "folder": "A06_Urban Regeneration Strategy Six Points Illuminating Gonghang-dong"
+    },
+    {
+      "id": "agency",
+      "title": "Agency",
+      "section": "education",
+      "number": "01",
+      "folder": "A01_Agency"
+    },
+    {
+      "id": "dar",
+      "title": "DAR",
+      "section": "education",
+      "number": "02",
+      "folder": "A02_DAR"
+    },
+    {
+      "id": "metaverse",
+      "title": "Metaverse",
+      "section": "education",
+      "number": "04",
+      "folder": "A04_Metaverse"
+    },
+    {
+      "id": "innovengers",
+      "title": "Innovengers",
+      "section": "education",
+      "number": "05",
+      "folder": "A05_Innovengers"
+    },
+    {
+      "id": "library",
+      "title": "Library",
+      "section": "education",
+      "number": "07",
+      "folder": "A07_Library"
+    },
+    {
+      "id": "gallery",
+      "title": "Gallery",
+      "section": "education",
+      "number": "08",
+      "folder": "A08_Gallery"
+    },
+    {
+      "id": "neighborhood-podcast-friends-of-gangnam-seocho",
+      "title": "Neighborhood Podcast Friends of Gangnam-Seocho",
+      "section": "curatorial",
+      "number": "01",
+      "folder": "C01_Neighborhood Podcast Friends of Gangnam-Seocho"
+    },
+    {
+      "id": "local-bottle-shop-alfri",
+      "title": "Local Bottle Shop ALFRI",
+      "section": "curatorial",
+      "number": "02",
+      "folder": "C02_Local Bottle Shop ALFRI"
+    },
+    {
+      "id": "pungmul-performance-planning",
+      "title": "Pungmul Performance Planning",
+      "section": "curatorial",
+      "number": "03",
+      "folder": "C03_Pungmul Performance Planning"
+    },
+    {
+      "id": "graduation-exhibition-planning",
+      "title": "Graduation Exhibition Planning",
+      "section": "curatorial",
+      "number": "04",
+      "folder": "C04_Graduation Exhibition Planning"
+    },
+    {
+      "id": "feminist-classical-concert-platform-design",
+      "title": "Feminist Classical Concert Platform Design",
+      "section": "curatorial",
+      "number": "05",
+      "folder": "C05_Feminist Classical Concert Platform Design"
+    },
+    {
+      "id": "k-pop-fan-art-merchandise-design",
+      "title": "K-POP fan Art & Merchandise Design",
+      "section": "curatorial",
+      "number": "06",
+      "folder": "C06_K-POP fan Art & Merchandise Design"
+    },
+    {
+      "id": "dynamic-relaxation",
+      "title": "Dynamic Relaxation",
+      "section": "other",
+      "number": "01",
+      "folder": "O01_Dynamic Relaxation"
+    },
+    {
+      "id": "ddp-uncover-seoul",
+      "title": "DDP, Uncover Seoul",
+      "section": "other",
+      "number": "02",
+      "folder": "O02_DDP, Uncover Seoul"
+    },
+    {
+      "id": "parametric-iris-wall",
+      "title": "Parametric Iris Wall",
+      "section": "other",
+      "number": "03",
+      "folder": "O03_Parametric Iris Wall"
     }
   ],
   "profile": {
