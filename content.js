@@ -160,6 +160,35 @@ window.PORTFOLIO = {
       "demo": false,
       "number": "05",
       "contribution": "Concept design; analytical diagrams; competition submission packages"
+    },
+    {
+      "id": "gonghang-dong",
+      "title": "Six Points Illuminating Gonghang-dong",
+      "section": "education",
+      "category": "Academic project",
+      "type": "Academic project",
+      "number": "06",
+      "image": "images/gonghang-dong/main.webp",
+      "images": [
+        "images/gonghang-dong/main.webp",
+        "images/gonghang-dong/1.webp",
+        "images/gonghang-dong/2.webp"
+      ],
+      "gallery": [
+        {
+          "label": "1",
+          "images": [
+            "images/gonghang-dong/1.webp"
+          ]
+        },
+        {
+          "label": "2",
+          "images": [
+            "images/gonghang-dong/2.webp"
+          ]
+        }
+      ],
+      "description": ""
     }
   ],
   "profile": {
