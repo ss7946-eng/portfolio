@@ -4,8 +4,7 @@ const data=window.PORTFOLIO;
 const sectionLabels = {
  professional: 'Professional',
  education: 'Education',
- other: 'Installation',
- curatorial: 'Curatorial Activity'
+ other: 'Other'
 };
 const main=document.querySelector('#main');
 const page=document.body.dataset.page;
@@ -44,6 +43,7 @@ if(page==='index'){
  const sectionGalleries = sections.map(({id, label, projects}) => gallery(projects, label, false, id)).join('');
  main.classList.add('page-work');
  main.innerHTML=`<div class="page-heading"><h1>Work</h1><nav class="work-index" aria-label="Work sections">${sectionLinks}</nav></div><div class="work-sections">${sectionGalleries}</div>`;
+ if(location.hash === '#curatorial') location.replace('#other');
 }else if(page==='about'){
  main.classList.add('page-about');main.innerHTML=`<div class="page-heading"><h1>About</h1></div>${profileSummary()}${intro()}${about(true)}${contact(data.profile.email,data.profile.phone,data.profile.phoneHref)}`;
 }else if(page==='contact'){

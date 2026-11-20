@@ -300,43 +300,43 @@ window.PORTFOLIO = {
     {
       "id": "neighborhood-podcast-friends-of-gangnam-seocho",
       "title": "Neighborhood Podcast Friends of Gangnam-Seocho",
-      "section": "curatorial",
-      "number": "01",
+      "section": "other",
+      "number": "04",
       "folder": "C01_Neighborhood Podcast Friends of Gangnam-Seocho"
     },
     {
       "id": "local-bottle-shop-alfri",
       "title": "Local Bottle Shop ALFRI",
-      "section": "curatorial",
-      "number": "02",
+      "section": "other",
+      "number": "05",
       "folder": "C02_Local Bottle Shop ALFRI"
     },
     {
       "id": "pungmul-performance-planning",
       "title": "Pungmul Performance Planning",
-      "section": "curatorial",
-      "number": "03",
+      "section": "other",
+      "number": "06",
       "folder": "C03_Pungmul Performance Planning"
     },
     {
       "id": "graduation-exhibition-planning",
       "title": "Graduation Exhibition Planning",
-      "section": "curatorial",
-      "number": "04",
+      "section": "other",
+      "number": "07",
       "folder": "C04_Graduation Exhibition Planning"
     },
     {
       "id": "feminist-classical-concert-platform-design",
       "title": "Feminist Classical Concert Platform Design",
-      "section": "curatorial",
-      "number": "05",
+      "section": "other",
+      "number": "08",
       "folder": "C05_Feminist Classical Concert Platform Design"
     },
     {
       "id": "k-pop-fan-art-merchandise-design",
       "title": "K-POP fan Art & Merchandise Design",
-      "section": "curatorial",
-      "number": "06",
+      "section": "other",
+      "number": "09",
       "folder": "C06_K-POP fan Art & Merchandise Design"
     },
     {
