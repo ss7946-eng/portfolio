@@ -4,8 +4,8 @@ const data=window.PORTFOLIO;
 const sectionLabels = {
  professional: 'Professional',
  education: 'Education',
- curatorial: 'Curatorial Activity',
- other: 'Other'
+ other: 'Installation',
+ curatorial: 'Curatorial Activity'
 };
 const main=document.querySelector('#main');
 const page=document.body.dataset.page;
@@ -54,7 +54,7 @@ if(page==='index'){
  else{
   document.title=p.title+' — '+data.name;
   const fields=[['Practice',p.practice],['Role',p.role],['Project type',p.type],['Scope',p.scope],['Contribution',p.contribution],['Period',p.dates],...(p.facts||[])].filter(([,value])=>value);
-  main.innerHTML=`<div class="page-heading"><a class="project-back" href="work.html#${esc(p.section)}">Back to ${esc(sectionLabels[p.section])}</a><h1>${esc(p.title)}</h1><p>${esc(p.category || sectionLabels[p.section])}</p></div><div class="project-hero">${p.image?`<img src="${esc(p.image)}" alt="${esc(p.title)}" fetchpriority="high" width="1600" height="1000">`:projectCover(p,true)}</div><div class="project-info">${p.description?`<section class="info-row"><h2>Info</h2><div class="prose"><p>${esc(p.description)}</p></div></section>`:''}${fields.length?`<section class="info-row"><h2>Project details</h2><dl class="facts">${fields.map(([label,value])=>`<div><dt>${label}</dt><dd>${esc(value)}</dd></div>`).join('')}</dl></section>`:''}</div>${projectGallery(p)}${gallery(data.projects.filter(q=>q.id!==p.id).slice(0,2),'Other work',true)}`;
+  main.innerHTML=`<div class="page-heading"><a class="project-back" href="work.html#${esc(p.section)}">Back to ${esc(sectionLabels[p.section])}</a><h1>${esc(p.title)}</h1><p>${esc(p.category || sectionLabels[p.section])}</p></div><div class="project-hero">${p.image?`<img src="${esc(p.image)}" alt="${esc(p.title)}" fetchpriority="high" width="1600" height="1000">`:projectCover(p,true)}</div><div class="project-info">${p.description?`<section class="info-row"><h2>Info</h2><div class="prose"><p>${esc(p.description)}</p></div></section>`:''}${fields.length?`<section class="info-row"><h2>Project details</h2><dl class="facts">${fields.map(([label,value])=>`<div><dt>${label}</dt><dd>${esc(value)}</dd></div>`).join('')}</dl></section>`:''}</div>${projectGallery(p)}${gallery(data.projects.filter(q=>q.id!==p.id).slice(0,4),'Other work',true)}`;
  }
 }else if(page==='privacy'){
  main.innerHTML='<div class="page-heading"><h1>Privacy</h1></div><div class="legal"><h2>A simple portfolio.</h2><p>This site has no contact form, analytics scripts or advertising cookies. It does not store visitor information in a database.</p><h2>External resources</h2><p>Sample images and fonts load from Framer’s content delivery network. Hosting and external resource providers may receive technical information such as your IP address when your browser requests a page or file. External links take you to other websites with their own privacy practices.</p></div>';

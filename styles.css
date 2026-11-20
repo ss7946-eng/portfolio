@@ -42,12 +42,12 @@
 
 .project-images{margin:60px 0 100px}.project-images figure{margin:0 0 24px}.project-images img{display:block;width:100%;height:auto;border-radius:4px}.image-credit{font-size:12px;color:#777;margin-top:24px}.project-hero:has(img){height:auto;aspect-ratio:auto}.project-hero img{display:block;width:100%;height:auto;object-fit:contain}
 
-/* Four project columns on desktop; tablet and mobile retain their layouts. */
+/* All project galleries use the same desktop card layout. */
 @media(min-width:1024px){
- body[data-page="index"] .grid,body[data-page="work"] .grid{grid-template-columns:repeat(4,minmax(0,1fr))}
- body[data-page="index"] .project-card .project-cover,body[data-page="work"] .project-card .project-cover{padding:20px}
- body[data-page="index"] .project-card .cover-title,body[data-page="work"] .project-card .cover-title{font-size:clamp(22px,2vw,36px);max-width:100%;padding:20px 0;overflow-wrap:anywhere}
- body[data-page="index"] .project-card .cover-top,body[data-page="index"] .project-card .cover-bottom,body[data-page="work"] .project-card .cover-top,body[data-page="work"] .project-card .cover-bottom{font-size:10px;gap:10px}
+ .section > .grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+ .grid .project-card .project-cover{padding:20px}
+ .grid .project-card .cover-title{font-size:clamp(22px,2vw,36px);max-width:100%;padding:20px 0;overflow-wrap:anywhere}
+ .grid .project-card .cover-top,.grid .project-card .cover-bottom{font-size:10px;gap:10px}
 }
 
 /* File-number groups are manual, keyboard-accessible image carousels. */
